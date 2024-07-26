@@ -11,7 +11,7 @@
     color: #e0f0f0; /* Optional: Change link color on hover */
 }
 
-.main-container {
+.card {
     border-radius: 10px;
     -webkit-box-shadow: 6px 9px 23px 3px rgba(66, 68, 90, 1);
     -moz-box-shadow: 6px 9px 23px 3px rgba(66, 68, 90, 1);
@@ -49,4 +49,33 @@ footer .btn-outline-light {
 footer .btn-outline-light:hover {
     background-color: #ffffff;
     color: #343a40;
+}
+
+.contact-container h1, 
+.contact-container h5 {
+    color: #37b7b3; /* Heading color */
+}
+
+.contact-container a {
+    color: #37b7b3; /* Default link color */
+}
+
+.contact-container a:hover {
+    color: #005f5f; /* Darker shade on hover for better visibility */
+}
+
+.btn-outline-light {
+    color: #37b7b3; /* Set the icon color */
+    border-color: #37b7b3; /* Optional: Set the border color to match the icon color */
+}
+
+.btn-outline-light:hover {
+    background-color: #37b7b3; /* Set the background color on hover */
+    color: #ffffff; /* Set the icon color on hover to white */
+    border-color: #37b7b3; /* Ensure the border color matches on hover */
+}
+
+.btn-base{
+    color: white;
+    background-color:#37b7b3;
 }
