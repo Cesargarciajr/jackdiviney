@@ -1,3 +1,9 @@
+/* General Styles */
+body {
+    font-family: 'Roboto Serif', serif;
+}
+
+/* Navbar Styles */
 .custom-navbar {
     background-color: #37b7b3;
 }
@@ -11,6 +17,7 @@
     color: #e0f0f0; /* Optional: Change link color on hover */
 }
 
+/* Card Styles */
 .card {
     border-radius: 10px;
     -webkit-box-shadow: 6px 9px 23px 3px rgba(66, 68, 90, 1);
@@ -18,13 +25,16 @@
     box-shadow: 6px 9px 23px 3px rgba(66, 68, 90, 1);
 }
 
+/* Custom Image Styles */
 .custom-img {
-    width: 350px; /* Set a specific width and height */
-    height: 350px;
+    width: 100%;
+    max-width: 350px; /* Adjust width for larger screens */
+    height: auto; /* Adjust height to maintain aspect ratio */
     border-radius: 50% !important; /* Make the image circular */
     object-fit: cover; /* Ensure the image covers the entire circle area */
 }
 
+/* Footer Styles */
 footer {
     background-color: #37b7b3; /* Dark background color for footer */
 }
@@ -51,6 +61,7 @@ footer .btn-outline-light:hover {
     color: #343a40;
 }
 
+/* Contact Container Styles */
 .contact-container h1, 
 .contact-container h5 {
     color: #37b7b3; /* Heading color */
@@ -64,6 +75,7 @@ footer .btn-outline-light:hover {
     color: #005f5f; /* Darker shade on hover for better visibility */
 }
 
+/* Button Styles */
 .btn-outline-light {
     color: #37b7b3; /* Set the icon color */
     border-color: #37b7b3; /* Optional: Set the border color to match the icon color */
@@ -75,7 +87,33 @@ footer .btn-outline-light:hover {
     border-color: #37b7b3; /* Ensure the border color matches on hover */
 }
 
-.btn-base{
+.btn-base {
     color: white;
-    background-color:#37b7b3;
+    background-color: #37b7b3;
+}
+
+/* Responsive Design */
+@media (max-width: 767.98px) {
+    .custom-img {
+        width: 100%;
+        height: auto; /* Ensure the image scales appropriately on smaller screens */
+    }
+
+    .contact-container .d-flex {
+        flex-direction: column; /* Stack social icons vertically on small screens */
+    }
+
+    footer .text-md-end {
+        text-align: center; /* Center align text on smaller screens */
+    }
+
+    footer .btn {
+        margin: 0.5rem; /* Adjust button spacing on smaller screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-container .d-flex {
+        justify-content: center; /* Center social icons on larger screens */
+    }
 }
